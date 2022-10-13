@@ -13,5 +13,11 @@ module Types
     def test_field
       "Hello World!"
     end
+
+    # Get all Questions:
+    field :questions, [Types::QuestionType], null: false
+    def questions
+      Question.all
+    end
   end
 end
