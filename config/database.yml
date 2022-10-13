@@ -23,16 +23,16 @@ default: &default
 
 development:
   <<: *default
-  database: test_online_development
+  database: online_test
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: test_online
+  username: postgres
 
   # The password associated with the postgres role (username).
-  #password:
+  password: Ynhune2001270499@
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -57,7 +57,9 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: test_online_test
+  database: online_test_test
+  username: postgres
+  password: Ynhune2001270499@
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,7 +82,14 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
+  # adapter: postgresql
+  # encoding: unicode
+  # # For details on connection pooling, see Rails configuration guide# https://guides.rubyonrails.org/configuring.html#database-
+  # pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  # database: sample_app_production
+  # username: postgres
+  # password: Ynhune2001270499@
   <<: *default
-  database: test_online_production
-  username: test_online
-  password: <%= ENV["TEST_ONLINE_DATABASE_PASSWORD"] %>
+  database: online_test_production
+  username: postgres
+  password: Ynhune2001270499@

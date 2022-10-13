@@ -82,6 +82,9 @@ GEM
     io-console (0.5.11)
     irb (1.4.2)
       reline (>= 0.3.0)
+    jbuilder (2.11.5)
+      actionview (>= 5.0.0)
+      activesupport (>= 5.0.0)
     loofah (2.19.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -139,6 +142,7 @@ GEM
     rake (13.0.6)
     reline (0.3.1)
       io-console (~> 0.5)
+    sqlite3 (1.5.3-x64-mingw-ucrt)
     thor (1.2.1)
     timeout (0.3.0)
     tzinfo (2.0.5)
@@ -156,9 +160,11 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   debug
+  jbuilder (~> 2.5)
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4)
+  sqlite3 (~> 1.4)
   tzinfo-data
 
 RUBY VERSION
