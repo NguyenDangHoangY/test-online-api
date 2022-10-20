@@ -8,5 +8,10 @@ class AnswerTest < ActiveSupport::TestCase
   test "should be valid" do
     assert @answer.valid?
   end
+
+  test "content should be present" do
+    @answer.content = " "
+    assert_not @answer.valid?
+  end
 end
 
