@@ -1,7 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  content: MyString
+firstQ:
+  content: "3 + 7"
+  correctAnswer: 3
+  point: 0.5
+  answer: 10
 
-two:
-  content: MyString
+secondQ:
+  content: "7 - 3"
+  correctAnswer: 2
+  point: 0.5
+  answer: 10

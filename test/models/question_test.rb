@@ -1,7 +1,11 @@
 require "test_helper"
 
 class QuestionTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  def setup
+    @question = questions(:firstQ)
+  end
+
+  test "should be valid" do
+    assert @question.valid?
+  end
 end

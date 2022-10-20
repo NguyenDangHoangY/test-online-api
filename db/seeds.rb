@@ -1,19 +1,37 @@
 Question.create(
     [
         {
-            content: "What is the difference between calling super and calling super()?",
+            content: "1 + 1 =",
+            correctAnswer: 0,
+            point: 0.5,
+            answer: nil
+        },
+        {
+            content: "1 + 2 =",
             correctAnswer: 1,
             point: 0.5,
             answer: nil
         },
         {
-            content: "What will val1 and val2 equal after the code below is executed? Explain your answer?",
+            content: "3 - 2 =",
             correctAnswer: 2,
             point: 0.5,
             answer: nil
         },
         {
-            content: "Which of the expressions listed below will result in 'false'?",
+            content: "2 * 2 =",
+            correctAnswer: 2,
+            point: 0.5,
+            answer: nil
+        },
+        {
+            content: "3 + 2 =",
+            correctAnswer: 3,
+            point: 0.5,
+            answer: nil
+        },
+        {
+            content: "3 / 2 =",
             correctAnswer: 3,
             point: 0.5,
             answer: nil
@@ -24,52 +42,100 @@ Question.create(
 Answer.create(
     [
         {
-            content: "abc",
+            content: "2",
             question_id: 1
         },
         {
-            content: "abc",
+            content: "3",
             question_id: 1
         },
         {
-            content: "abc",
-            question_id: 3
-        },
-        {
-            content: "abc",
+            content: "4",
             question_id: 1
         },
         {
-            content: "abc",
+            content: "1",
+            question_id: 1
+        },
+        {
+            content: "1",
             question_id: 2
         },
         {
-            content: "abc",
+            content: "3",
             question_id: 2
         },
         {
-            content: "abc",
+            content: "2",
             question_id: 2
         },
         {
-            content: "abc",
+            content: "7",
             question_id: 2
         },
         {
-            content: "abc",
+            content: "0",
             question_id: 3
         },
         {
-            content: "abc",
+            content: "2",
             question_id: 3
         },
         {
-            content: "abc",
+            content: "1",
             question_id: 3
         },
         {
-            content: "abc",
+            content: "3",
             question_id: 3
+        },
+        {
+            content: "1",
+            question_id: 4
+        },
+        {
+            content: "2",
+            question_id: 4
+        },
+        {
+            content: "4",
+            question_id: 4
+        },
+        {
+            content: "8",
+            question_id: 4
+        },
+        {
+            content: "1",
+            question_id: 5
+        },
+        {
+            content: "2",
+            question_id: 5
+        },
+        {
+            content: "3",
+            question_id: 5
+        },
+        {
+            content: "5",
+            question_id: 5
+        },
+        {
+            content: "0.5",
+            question_id: 6
+        },
+        {
+            content: "2.5",
+            question_id: 6
+        },
+        {
+            content: "3",
+            question_id: 6
+        },
+        {
+            content: "1.5",
+            question_id: 6
         },
     ]
 )

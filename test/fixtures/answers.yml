@@ -1,11 +1,9 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+firstAnswer:
   content: MyString
-  iscorrect: false
-  question: one
+  question: firstQ
 
-two:
+secondAnswer:
   content: MyString
-  iscorrect: false
-  question: two
+  question: firstQ
