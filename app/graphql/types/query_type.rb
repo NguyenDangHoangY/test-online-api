@@ -14,10 +14,16 @@ module Types
       "Hello World!"
     end
 
-    # Get all Questions:
+    # Get All Questions:
     field :questions, [Types::QuestionType], null: false
     def questions
       Question.all
+    end
+
+    # Get All Users:
+    field :users, [Types::UserType], null: false
+    def users
+      User.all
     end
   end
 end
