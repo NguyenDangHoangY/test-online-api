@@ -1,10 +1,15 @@
 class GraphqlController < ApplicationController
+  before_action :authenticate_user!
+  after_action :set_headers
+
   # If accessing from outside this domain, nullify the session
   # This allows for outside API access while preventing CSRF attacks,
   # but you'll have to authenticate your user separately
   # protect_from_forgery with: :null_session
 
   def execute
+    current_user
+
     variables = prepare_variables(params[:variables])
     query = params[:query]
     operation_name = params[:operationName]
@@ -46,5 +51,9 @@ class GraphqlController < ApplicationController
     logger.error e.backtrace.join("\n")
 
     render json: { errors: [{ message: e.message, backtrace: e.backtrace }], data: {} }, status: 500
+  end
+
+  def set_headers
+    response.header['Authorization'] = current_user.tokens.first.last["token"]
   end
 end
