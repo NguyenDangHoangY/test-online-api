@@ -17,6 +17,8 @@ gem 'graphql'
 gem 'devise_token_auth'
 gem 'devise'
 gem 'omniauth'
+gem 'pry-rails'
+gem 'pry-highlight', '~> 0.1.0'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
@@ -52,5 +54,5 @@ group :development do
   gem 'graphiql-rails'
 end
 
-gem 'pry-rails', :group => :development
+# gem 'pry-rails', :group => :development
 
