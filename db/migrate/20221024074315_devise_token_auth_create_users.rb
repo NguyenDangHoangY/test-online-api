@@ -32,6 +32,7 @@ class DeviseTokenAuthCreateUsers < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :email
       t.float :point
+      t.boolean :admin, default: false
 
       ## Tokens
       t.json :tokens

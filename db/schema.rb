@@ -46,6 +46,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_24_074315) do
     t.string "name"
     t.string "email"
     t.float "point"
+    t.boolean "admin", default: false
     t.json "tokens"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
