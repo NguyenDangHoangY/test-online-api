@@ -139,3 +139,5 @@ Answer.create(
         },
     ]
 )
+
+User.create({name: "admin", email: "admin@gmail.com", password: "Ynhune27", point: "8", admin: "true"})
