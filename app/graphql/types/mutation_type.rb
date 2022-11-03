@@ -4,5 +4,6 @@ module Types
     field :update_user, mutation: Mutations::UpdateUser
     field :create_question, mutation: Mutations::CreateQuestion
     field :create_answer, mutation: Mutations::CreateAnswer
+    field :update_question, mutation: Mutations::UpdateQuestion
   end
 end

@@ -21,7 +21,6 @@ module Mutations
       
       def resolve(id:, **arg)
         user = User.find(id)
-        # user = User.new(arg)
         if user.update(arg)
           {
             user: user
